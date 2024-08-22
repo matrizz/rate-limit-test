@@ -44,7 +44,7 @@ const theme = extendTheme({
     }
 })
 
-export const Login = () => {
+export default function Login() {
 
     useEffect(() => {
         const checkUserAuthentication = () => {
@@ -161,5 +161,3 @@ export const Login = () => {
         </ChakraProvider>
     )
 }
-
-export default Login

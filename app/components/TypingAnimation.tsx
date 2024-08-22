@@ -1,7 +1,8 @@
+//@ts-nocheck
 'use client'
-import { Sequence, TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 
-export const TypeWriteAnimation = ({ string }: { string: Sequence }) => {
+export const TypeWriteAnimation = ({ string }) => {
     return (
         <TypeAnimation
             sequence={string}

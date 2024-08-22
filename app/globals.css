@@ -17,14 +17,34 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  color: rgb(var(--foreground-rgb)) !important;
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)) !important;
 }
+
+* {
+  outline: none;
+}
+
+*::-webkit-scrollbar {
+  appearance: none;
+  width: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+  appearance: none;
+  border-radius: 0.2rem;
+  background-color: #3737377a;
+}
+
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #4342427a;
+}
+
 
 @layer utilities {
   .text-balance {

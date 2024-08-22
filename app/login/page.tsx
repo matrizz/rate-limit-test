@@ -7,7 +7,7 @@ const activeLabelStyles = {
     transform: 'scale(0.85) translateY(-24px)'
 }
 
-export const theme = extendTheme({
+const theme = extendTheme({
     components: {
         Form: {
             variants: {

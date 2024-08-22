@@ -1,4 +1,6 @@
-import { RadioCanadaBig } from '../layout';
+import { Radio_Canada } from "next/font/google";
+
+const RadioCanadaBig = Radio_Canada({ subsets: ['latin']})
 
 type TextElements = PreProps
     | SpanProps
